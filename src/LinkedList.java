@@ -16,7 +16,7 @@ class CLType {           //定义链表结构
             System.out.println("申请内存失败！");
             return null;
         } else {
-            node.nodeDate = nodeDate;       //保存数据
+            node.nodeDate = nodeDate;      //保存数据
             node.nextNode = null;
             if (head == null) {
                 head = node;
@@ -130,7 +130,7 @@ public class LinkedList {
             } else {
                 nodeData.name = scanner.next();
                 nodeData.age = scanner.nextInt();
-                head = CL.CLAddEnd(head, nodeData);        //在链表尾部添加节点
+                head = CL.CLAddFirst(head, nodeData);        //在链表尾部添加节点
             }
         } while (true);
         CL.CLAllNode(head);
